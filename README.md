@@ -1,23 +1,13 @@
 # Muhammed Nihal T — Portfolio
 
-Responsive static portfolio for a video editor and motion designer. Built with HTML, CSS and JavaScript; no build step or dependencies.
+Original portfolio design with two selected work videos embedded from YouTube.
 
 ## Preview
 
-Run `python -m http.server 8765` in this folder, then open http://localhost:8765. Use a web server rather than opening the HTML file directly so YouTube receives the origin information it requires.
+Run `python -m http.server 8765` and open http://localhost:8765. Use HTTP hosting so YouTube receives the required origin information.
 
-## Work videos
+## Videos
 
-The two supplied YouTube videos are configured in `script.js`. Visitors can play them in a modal or follow the permanent YouTube links. Escape, the Close button, and clicking the backdrop close the player and stop playback. Embedding depends on each video's YouTube visibility, age restrictions and owner settings.
+The Selected Work section in `index.html` contains two YouTube embeds and direct YouTube fallback links. Update the iframe URLs, titles and fallback links together when changing a video. Playback depends on YouTube visibility and embedding settings.
 
-Update the `projects` array to change the video URLs, titles and categories. The player supports YouTube (including Shorts), Vimeo, and direct MP4/WebM links. Update the corresponding HTML links and fallback titles too, so they remain available without JavaScript.
-
-## Resume and content
-
-The Print / save resume button opens the browser print dialog with a print-specific layout. Existing skills, services and contact details are retained; no employment, qualifications, or performance claims have been invented.
-
-The portrait is `assets/nihal-portrait.webp`. Fonts use Google Fonts with local fallbacks. Reduced motion and keyboard focus are supported.
-
-## Hosting
-
-Publish these files using the repository's existing static hosting or GitHub Pages configuration. No build command is necessary.
+No build step or dependencies are required. Publish the root directory on Vercel.
